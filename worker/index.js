@@ -6,7 +6,9 @@
 import { createClient } from '@supabase/supabase-js';
 import RssParser from 'rss-parser';
 import * as cheerio from 'cheerio';
-import feedsData from './feeds.json' assert { type: 'json' };
+import { readFileSync } from 'fs';
+
+const feedsData = JSON.parse(readFileSync(new URL('./feeds.json', import.meta.url), 'utf8'));
 
 // =============================================================
 // CONFIGURACIÓN

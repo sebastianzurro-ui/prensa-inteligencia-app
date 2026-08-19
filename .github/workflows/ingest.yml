@@ -1,0 +1,46 @@
+# =============================================================
+# PrensaAR - Ingestión automática de datos
+# Se ejecuta cada 30 minutos vía GitHub Actions (gratis)
+# =============================================================
+
+name: '📰 Ingestar datos de monitoreo'
+
+on:
+  schedule:
+    # Cada 30 minutos, las 24 horas
+    - cron: '*/30 * * * *'
+  workflow_dispatch: # Botón manual para ejecutar ahora
+
+jobs:
+  ingest:
+    name: 'Ingestar feeds de medios'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: '📥 Clonar repo'
+        uses: actions/checkout@v4
+
+      - name: '📦 Instalar Node.js'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: worker/package-lock.json
+
+      - name: '📚 Instalar dependencias del worker'
+        working-directory: worker
+        run: npm ci
+
+      - name: '📰 Ejecutar ingestión'
+        working-directory: worker
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: node index.js
+
+      - name: '📊 Reportar resultado'
+        if: always()
+        run: |
+          echo "Ingestión completada a las $(date -u)"
+          echo "Commit SHA: ${{ github.sha }}"

@@ -5,7 +5,6 @@
 
 import { createClient } from '@supabase/supabase-js';
 import RssParser from 'rss-parser';
-import * as cheerio from 'cheerio';
 import { readFileSync } from 'fs';
 
 const feedsData = JSON.parse(readFileSync(new URL('./feeds.json', import.meta.url), 'utf8'));
@@ -120,8 +119,18 @@ function detectarTemas(texto) {
 }
 
 // =============================================================
-// SCRAPING LIGERO DE CONTENIDO
+// EXTRAER TEXTO SIMPLE DEL HTML (sin cheerio)
 // =============================================================
+function extraerTextoHtml(html) {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, '')
+    .replace(/<style[\s\S]*?<\/style>/gi, '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, 3000);
+}
+
 async function scrappearContenido(url) {
   try {
     const controller = new AbortController();
@@ -139,42 +148,7 @@ async function scrappearContenido(url) {
     if (!res.ok) return null;
 
     const html = await res.text();
-    const $ = cheerio.load(html);
-
-    // Intentar extraer contenido del artículo
-    const selectores = [
-      'article',
-      '.article-body',
-      '.nota-body',
-      '.content-body',
-      '.story-body',
-      'main p'
-    ];
-
-    let contenido = '';
-    for (const sel of selectores) {
-      const elementos = $(sel);
-      if (elementos.length > 0) {
-        contenido = elementos
-          .map((_, el) => $(el).text().trim())
-          .get()
-          .join('\n\n')
-          .slice(0, 3000); // max 3000 chars
-        break;
-      }
-    }
-
-    // Fallback: todos los párrafos
-    if (!contenido) {
-      contenido = $('p')
-        .map((_, el) => $(el).text().trim())
-        .get()
-        .filter((t) => t.length > 50)
-        .join('\n\n')
-        .slice(0, 3000);
-    }
-
-    return contenido || null;
+    return extraerTextoHtml(html);
   } catch {
     return null;
   }

@@ -22,53 +22,46 @@
       "bias": "centro"
     },
     {
-      "nombre": "Página 12",
-      "url": "https://www.pagina12.com.ar/rss/politica",
-      "tipo": "digital",
-      "jurisdiccion": "nacion",
-      "bias": "izquierda"
-    },
-    {
       "nombre": "Perfil",
-      "url": "https://www.perfil.com.ar/feed",
+      "url": "https://www.perfil.com/feed",
       "tipo": "digital",
       "jurisdiccion": "nacion",
       "bias": "centro"
     },
     {
       "nombre": "Ámbito Financiero",
-      "url": "https://www.ambito.com/rss/politica",
+      "url": "https://www.ambito.com/rss/pages/economia.xml",
       "tipo": "digital",
       "jurisdiccion": "nacion",
       "bias": "centro-derecha"
     },
     {
-      "nombre": "Minuto Uno",
-      "url": "https://www.minutouno.com/feed/",
+      "nombre": "Crónica",
+      "url": "https://www.cronica.com.ar/feed/feed.xml",
       "tipo": "digital",
       "jurisdiccion": "nacion",
       "bias": "centro"
     },
     {
-      "nombre": "Urgente24",
-      "url": "https://www.urgente24.com/feed/",
+      "nombre": "El Cronista",
+      "url": "https://www.cronista.com/files/rss/news.xml",
       "tipo": "digital",
       "jurisdiccion": "nacion",
-      "bias": "centro"
+      "bias": "centro-derecha"
     },
     {
       "nombre": "TN",
-      "url": "https://tn.com.ar/rss/",
+      "url": "https://tn.com.ar/rss.xml",
       "tipo": "tv",
       "jurisdiccion": "nacion",
       "bias": "centro-derecha"
     },
     {
-      "nombre": "C5N",
-      "url": "https://www.c5n.com/feed/",
-      "tipo": "tv",
+      "nombre": "Buenos Aires Times",
+      "url": "https://www.batimes.com/feed",
+      "tipo": "digital",
       "jurisdiccion": "nacion",
-      "bias": "izquierda"
+      "bias": "centro"
     },
     {
       "nombre": "La Voz del Interior",
@@ -78,45 +71,10 @@
       "bias": "centro"
     },
     {
-      "nombre": "La Capital (Rosario)",
-      "url": "https://www.lacapital.com.ar/rss/",
+      "nombre": "Minuto Uno",
+      "url": "https://www.minutouno.com/rss/pages/politica.xml",
       "tipo": "digital",
-      "jurisdiccion": "santa_fe",
-      "bias": "centro"
-    },
-    {
-      "nombre": "Los Andes (Mendoza)",
-      "url": "https://losandes.com.ar/feed/",
-      "tipo": "digital",
-      "jurisdiccion": "mendoza",
-      "bias": "centro"
-    },
-    {
-      "nombre": "El Día (La Plata)",
-      "url": "https://www.eldia.com.ar/feed/",
-      "tipo": "digital",
-      "jurisdiccion": "bsas",
-      "bias": "centro"
-    },
-    {
-      "nombre": "La Gaceta (Tucumán)",
-      "url": "https://www.lagaceta.com.ar/feed/",
-      "tipo": "digital",
-      "jurisdiccion": "tucuman",
-      "bias": "centro"
-    },
-    {
-      "nombre": "El Tribuno (Salta)",
-      "url": "https://www.tribuno.com.ar/feed/",
-      "tipo": "digital",
-      "jurisdiccion": "salta",
-      "bias": "centro"
-    },
-    {
-      "nombre": "Diario Norte (Chaco)",
-      "url": "https://www.donorateur.com.ar/feed/",
-      "tipo": "digital",
-      "jurisdiccion": "chaco",
+      "jurisdiccion": "nacion",
       "bias": "centro"
     },
     {
@@ -127,69 +85,6 @@
       "bias": "centro"
     },
     {
-      "nombre": "Diario de Cuyo (San Juan)",
-      "url": "https://www.diariocuyo.com.ar/feed/",
-      "tipo": "digital",
-      "jurisdiccion": "san_juan",
-      "bias": "centro"
-    },
-    {
-      "nombre": "El Cronista",
-      "url": "https://www.cronista.com/feed/",
-      "tipo": "digital",
-      "jurisdiccion": "nacion",
-      "bias": "centro-derecha"
-    },
-    {
-      "nombre": "Radio Mitre",
-      "url": "https://www.radiomitre.com.ar/feed/",
-      "tipo": "radio",
-      "jurisdiccion": "nacion",
-      "bias": "centro-derecha"
-    },
-    {
-      "nombre": "Radio Nacional",
-      "url": "https://www.radionacional.com.ar/feed/",
-      "tipo": "radio",
-      "jurisdiccion": "nacion",
-      "bias": "oficial"
-    },
-    {
-      "nombre": "Cadena 3",
-      "url": "https://www.cadena3.com/feed/",
-      "tipo": "radio",
-      "jurisdiccion": "cordoba",
-      "bias": "centro"
-    },
-    {
-      "nombre": "Radio 10",
-      "url": "https://www.radio10.com.ar/feed/",
-      "tipo": "radio",
-      "jurisdiccion": "nacion",
-      "bias": "centro"
-    },
-    {
-      "nombre": "Radio con Vos",
-      "url": "https://www.radioconvos.com.ar/feed/",
-      "tipo": "radio",
-      "jurisdiccion": "nacion",
-      "bias": "centro"
-    },
-    {
-      "nombre": "La Política Online",
-      "url": "https://www.lapoliticaonline.com/rss",
-      "tipo": "digital",
-      "jurisdiccion": "nacion",
-      "bias": "centro"
-    },
-    {
-      "nombre": "iProfesional",
-      "url": "https://www.iprofesional.com/feed/",
-      "tipo": "digital",
-      "jurisdiccion": "nacion",
-      "bias": "centro-derecha"
-    },
-    {
       "nombre": "El Intransigente",
       "url": "https://elintransigente.com/feed/",
       "tipo": "digital",
@@ -197,67 +92,11 @@
       "bias": "centro"
     },
     {
-      "nombre": "MDZ (Mendoza)",
-      "url": "https://www.mdz.com.ar/feed/",
+      "nombre": "La Gaceta (Tucumán)",
+      "url": "https://feeds.feedburner.com/LaGaceta-General",
       "tipo": "digital",
-      "jurisdiccion": "mendoza",
+      "jurisdiccion": "tucuman",
       "bias": "centro"
-    },
-    {
-      "nombre": "El Litoral (Santa Fe)",
-      "url": "https://www.ellitoral.com/feed/",
-      "tipo": "digital",
-      "jurisdiccion": "santa_fe",
-      "bias": "centro"
-    },
-    {
-      "nombre": "Uno Santa Fe",
-      "url": "https://www.unosantafe.com.ar/feed/",
-      "tipo": "digital",
-      "jurisdiccion": "santa_fe",
-      "bias": "centro"
-    },
-    {
-      "nombre": "El Territorio (Misiones)",
-      "url": "https://www.elterritorio.com.ar/feed/",
-      "tipo": "digital",
-      "jurisdiccion": "misiones",
-      "bias": "centro"
-    },
-    {
-      "nombre": "8300 (Neuquén)",
-      "url": "https://www.8300.com.ar/feed/",
-      "tipo": "digital",
-      "jurisdiccion": "neuquen",
-      "bias": "centro"
-    },
-    {
-      "nombre": "La Arena (La Pampa)",
-      "url": "https://www.laarena.com.ar/feed/",
-      "tipo": "digital",
-      "jurisdiccion": "la_pampa",
-      "bias": "centro"
-    },
-    {
-      "nombre": "Radio Splendid",
-      "url": "https://www.radiosplendid.com.ar/feed/",
-      "tipo": "radio",
-      "jurisdiccion": "nacion",
-      "bias": "centro-derecha"
-    },
-    {
-      "nombre": "CNN Radio",
-      "url": "https://cnnespanol.cnn.com/feed/",
-      "tipo": "radio",
-      "jurisdiccion": "nacion",
-      "bias": "centro"
-    },
-    {
-      "nombre": "Télam",
-      "url": "https://www.telam.com.ar/rss2/ultimasnoticias.xml",
-      "tipo": "agencia",
-      "jurisdiccion": "nacion",
-      "bias": "oficial"
     }
   ],
   "temas_politicos": [

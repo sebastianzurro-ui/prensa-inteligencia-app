@@ -6,6 +6,10 @@
 name: '📰 Ingestar datos de monitoreo'
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'worker/**'
   schedule:
     # Cada 30 minutos, las 24 horas
     - cron: '*/30 * * * *'

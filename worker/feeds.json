@@ -2,7 +2,7 @@
   "feeds": [
     {
       "nombre": "La Nación",
-      "url": "https://www.lanacion.com.ar/rss",
+      "url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/?outputType=xml",
       "tipo": "digital",
       "jurisdiccion": "nacion",
       "bias": "centro-derecha"
@@ -16,7 +16,7 @@
     },
     {
       "nombre": "Infobae",
-      "url": "https://www.infobae.com/feeds/rss/",
+      "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
       "tipo": "digital",
       "jurisdiccion": "nacion",
       "bias": "centro"
